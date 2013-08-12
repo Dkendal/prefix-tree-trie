@@ -30,7 +30,9 @@ public class Trie {
 
   public List<string> PartialLookup(string partial) {
     var wordList = new List<string>();
-    this[partial].ToList( ref wordList );
+    var node = this[partial];
+    if (node != null)
+      node.ToList( ref wordList );
     return wordList;
   }
 }
