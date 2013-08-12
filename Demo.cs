@@ -1,4 +1,5 @@
 ﻿using System;
+using PrefixTree;
 
 internal class Demo {
 
